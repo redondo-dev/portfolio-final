@@ -7,14 +7,16 @@
     /* background-color: #9dd1d7; */
     /* background-color: #9195f8;  */
     color: #141413;
-   
+
 
 }
+
 @keyframes cube {
     from {
         transform: scale(0) rotate(0deg) translate(-50%, -50%);
         opacity: 1;
     }
+
     to {
         transform: scale(20) rotate(960deg) translate(-50%, -50%);
         opacity: 0;
@@ -33,6 +35,7 @@
     overflow: hidden;
     z-index: -1;
 }
+
 .background li {
     position: absolute;
     top: 80vh;
@@ -45,8 +48,8 @@
     transform: scale(0) rotate(0deg) translate(-50%, -50%);
     animation: cube 16s ease-in forwards infinite;
 }
-undefined
-.background li:nth-child(0) {
+
+undefined .background li:nth-child(0) {
     animation-delay: 0s;
     left: 22vw;
     top: 20vh;
@@ -83,7 +86,8 @@ undefined
     animation-delay: 10s;
     left: 80vw;
     top: 87vh;
-    border-color: #faf3f3;}
+    border-color: #faf3f3;
+}
 
 .header {
     display: flex;
@@ -113,8 +117,8 @@ a {
     text-decoration: none;
     position: relative;
     /* text-align: center; */
-    /* font-size:25px; */
-    /* font-weight: 3px bold; */
+    font-size:20px; 
+    font-weight: 3px bold black;
     font-style: italic;
 }
 
@@ -156,7 +160,8 @@ h1 {
     width: 300px;
     height: 300px;
     border-radius: 5px;
-    box-shadow: 2px solid #b81818;
+    box-shadow: 5px 6px 6px 10px #151515;
+
 
 }
 
@@ -193,9 +198,11 @@ h2 {
     text-align: center;
     color: #e86f6f;
 }
-h4{
-    margin-top:300px;
+
+h4 {
+    margin-top: 300px;
 }
+
 /* .link,
 .link1,
 .link2 {
@@ -223,13 +230,14 @@ p {
 .experiences,
 .centre {
     width: 100%;
-    /* border: solid 3px #b81818;  */
+    border: solid 3px #141313;  
     border-radius: 9999px;
     margin: 20px;
     display: none;
     text-align: center;
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
+    box-shadow:6px 6px 12px #e67272;
 
 }
 
@@ -239,7 +247,7 @@ p {
 }
 
 .experiences:hover {
-    background-color:#e97d7d;
+    background-color: #e97d7d;
     transform: translateX(-10px);
 }
 
@@ -281,6 +289,8 @@ p {
     cursor: pointer;
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
+    box-shadow:6px 6px 12px #060606;
+
 
 }
 
@@ -320,6 +330,7 @@ p {
     object-fit: cover;
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
+    box-shadow:6px 6px 12px #ece8e8;
 
 }
 
@@ -353,7 +364,8 @@ img {
 }
 
 h2,
-h4,h5{
+h4,
+h5 {
     text-align: center;
 }
 
@@ -365,7 +377,9 @@ h4,h5{
     justify-items: center;
     flex-wrap: wrap;
     text-align: center;
-  
+    box-shadow:6px 6px 12px #151515;
+
+
 }
 
 .image {
@@ -373,6 +387,7 @@ h4,h5{
     height: 350px;
     margin: 10px;
     padding: 10px;
+box-shadow:6px 6px 12px #151515;
 
 }
 
@@ -394,11 +409,9 @@ h4,h5{
 /* style formulaire */
 
 .formulaire {
-    /* display: inline-block; */
-    /* justify-content: center;
-    justify-items: center; */
+ 
     text-align: center;
-    width: 40%;
+    width:40%;
     margin-left: 50px;
     background-color: #cf9393;
 
@@ -424,13 +437,13 @@ textarea {
 }
 
 #checkbox {
-    width: 20px;
+    width: 20%;
     height: 20px;
-    margin-left: 60%;
+    margin-left:40%;
 }
 
 .contact {
-    display:inline-block;
+    display: inline-block;
     width: 40%;
     margin: 30px;
     padding: 50px;
@@ -453,10 +466,10 @@ textarea {
 
 .fa-circle-up {
     font-size: 80px;
-    margin-left:50%;
-    margin-bottom: 10%;
+    margin-left: 90%;
+    margin-bottom: 3%;
     color: #da6363;
-    background-color: rgb(243, 237, 237);
+    background-color: transparent;
 
 
 }
@@ -485,37 +498,78 @@ i:hover {
 /* pour ecran moins de 981px */
 
 @media only screen and (max-width: 990px) {
-    body {
-        background-color: rgb(17, 18, 19);
-    }
+   
 
     .header {
-        width: 250px;
-        height: 350px;
-        right:0px;
-        top:-50px;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        width: 100%;
+        height: 40vh;
+        left: 0;
+        top: 0;
         text-align: center;
-        background-color: rgb(176, 72, 51);
+        background-color: rgb(206, 114, 114);
+        backdrop-filter: blur(8px);
         color: #181617;
-        transition: 0.7s; 
+        transition: all ease-in-out 0.7s;
         position: absolute;
         border-radius: 20px;
+        margin-bottom: 20px;
     }
 
-    a {
+    .links {
         /* margin: 20px; */
         display: block;
         color: #fff;
+        font-size: 1.4em;
+    }
+
+    .links::after {
+        content: '';
+        width: 0%;
+        height: 3px;
+        background-color: #0f0e0e;
+        position: absolute;
+        left: 0px;
+        bottom: -6px;
+        transition: 0.5s;
+    }
+    
+    .links:hover::after {
+        width: 100%;
+    }
+    h1 {
+        position: relative;
+        top:320px;
+        text-align: center;
+        font-size: 2em;
+        color: #080807;
+    }
+
+    .profil {
+        width: 250px;
+        height: 210px;
+        position: absolute;
+        top: 20px;
+        padding: 10px;
+
+
+    }
+
+    .apropos {
+        margin-top:80px;
+        display: block;
     }
 
     a:hover {
         color: #d04f5c;
     }
 
-     .competences {
-     
+    .competences {
+
         width: 90%;
-    } 
+    }
 
     .frontEnd {
         display: block;
@@ -558,9 +612,6 @@ i:hover {
     #h4 {
         margin-left: 15%;
     }
-    .fa-circle-up {
-        margin-right:40%;
-    }
 
     i:hover {
         color: #0000ba;
@@ -571,16 +622,56 @@ i:hover {
 
 @media only screen and (max-width:740px) {
 
-     .header {
-    position:relative;
-    margin-left:0px;
-    top:0px;
-
-    }  
-    .fa-circle-up {
-        margin-left:30%;
+    .header {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        width: 100%;
+        height: 40vh;
+        left: 0;
+        top: 0;
+        text-align: center;
+        background-color: rgb(237, 154, 154);
+        backdrop-filter: blur(8px);
+        color: #181617;
+        transition: all ease-in-out 0.7s;
+        position: absolute;
+        border-radius: 20px;
     }
-    .fa-solid, .fas {
+
+    .links {
+        /* margin: 20px; */
+        display: block;
+        color: #fff;
+        font-size: 1.4em;
+    }
+
+    h1 {
+        position: relative;
+        top: 300px;
+        text-align: center;
+        font-size: 1.5em;
+        color: #080807;
+        margin-bottom: 50px;
+    }
+
+    .profil {
+        width: 180px;
+        height: 180px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+
+
+    }
+
+    .apropos {
+        margin-top:220px;
+        display: block;
+    }
+
+    .fa-solid,
+    .fas {
         font-weight: 900;
         white-space: 5px;
         font-size: 0.4em;
@@ -589,20 +680,20 @@ i:hover {
 }
 
 
-
+ 
 
 /* pour telephone iphone se et ecran moisn de 400px de width */
 @media only screen and (max-width:400px) {
- body{ 
+    body {
 
-    background-color: rgb(220, 224, 227);
-} 
+        background-color: rgb(220, 224, 227);
+    }
+
     .header {
         position: relative;
-        margin-left: 17%;
         text-align: center;
-        
-      
+
+
 
     }
 
@@ -619,13 +710,18 @@ i:hover {
     }
 
     .profil {
-        margin-right: 30px;
+         position:absolute;
+        right:10px;
+        top:0px;
+        left:10px; 
+        width:150px;
+        height:150px;
     }
 
     a {
-         margin-right:80px;
+        margin-right: 80px;
         padding: 0;
-      
+
 
     }
 
@@ -633,40 +729,52 @@ i:hover {
         width: 300px;
         height: 300px;
         border-radius: 50%;
-        margin-right:70px;
+        margin-right: 70px;
     }
-.projet{
-    margin:10%;
-}
-    .contact{
-        margin-right:120px ;
+
+    .projet {
+        margin: 10%;
     }
-    .fa-circle-up {
-        margin-left:30%;
+
+    .contact {
+        margin-right: 120px;
     }
+
     i {
         color: #ff004f;
         margin-left: 40px;
         padding: 0px;
 
     }
-    .fa-solid, .fas {
+
+    .fa-solid,
+    .fas {
         font-weight: 900;
-        margin-right:85px;
-        font-size:8px;
+        margin-right: 85px;
+        font-size: 80px;
         letter-spacing: 5px;
-        line-height:5px ;
+        line-height: 5px;
     }
+    
+.fa-circle-up {
+    font-size: 80px;
+    margin-left: 90%;
+    margin-bottom: 3%;
+    color: #da6363;
+    background-color: transparent;
+
+
+}
 
     .formulaire {
-        margin-left: 5px;
+        margin-left: 50px;
         margin-right: 25px;
         width: 70%;
         height: 30%;
     }
 
     #checkbox {
-        margin-left:15px;
+        margin-left: 50px;
 
     }
 
@@ -682,8 +790,10 @@ i:hover {
     .centre {
         margin-left: 25%;
     }
-    h5{
+
+    h5 {
         text-align: center;
-        margin-right: 80px;;
+        margin-right: 80px;
+        ;
     }
 }

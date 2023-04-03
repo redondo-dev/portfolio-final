@@ -6,6 +6,9 @@ body{
 /* background: rgb(96,10,19);
 background: linear-gradient(90deg, rgba(96,10,19,0.9304971988795518) 97%, rgba(13,13,16,0.6419817927170868) 100%);
 } */
+
+
+
 }
 .movies{
     width: fit-content; 
@@ -24,10 +27,11 @@ img{
     height:350px;
     border:rgb(214, 56, 56) 3px solid;
     border-radius: 10px;
-     box-shadow: inset 5px 5px 0 0 red; 
+     /* box-shadow: inset 5px 5px 0 0 red;  */
+     box-shadow:6px 6px 12px #e7e7e1;
     cursor:pointer;
     padding:10px;
-    box-shadow: rgba(174, 174, 193, 0.25) 0px 30px 60px -12px inset, rgba(247, 243, 243, 0.3) 0px 18px 36px -18px inset;
+    /* box-shadow: rgba(174, 174, 193, 0.25) 0px 30px 60px -12px inset, rgba(247, 243, 243, 0.3) 0px 18px 36px -18px inset; */
     transition: transform 0.8s;
     margin-left:20px ;
 }
